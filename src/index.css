@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800&display=swap');
+
+:root {
+  --primary-dark: #5651e5;
+  --primary-light: #709dff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@layer base {
+  html {
+    @apply scroll-smooth
+  }
+
+  body {
+    font-family: Poppins, 'sans-serif';
+    box-sizing: border-box;
+  }
+
+  img,
+  svg,
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+  }
+
+  a,
+  li,
+  ul
+  {
+    list-style: none;
+    text-decoration: none;
+  }
+
+
+  input,
+  button,
+  select {
+    @apply  outline-none
+  }
+
+
+  ul,
+  li {
+    @apply list-none p-0 m-0 text-sm
+  }
+}
+
+
+
+
+.active {
+    @apply text-blue-500
+}
+.banner-1 {
+  background-image: url(../public/assets/offer.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.new-bottom {
+  display: none;
+  bottom: 100%;
+
+}
+
+
+.new-top:hover .new-bottom {
+  display: block;
+  bottom: 0;
+} 
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto)); 
+  gap: 1rem; 
+  row-gap: 1rem;
+}
+
+.contact-form_input {
+  @apply flex-grow w-full text-xs text-gray-800 py-3 
+  px-6 mb-3 transition duration-200 bg-white  rounded-md shadow-sm
+  border border-gray-300 aspect-auto  focus:border-purple-500 
+  focus:outline-none
+}
+
+.footer-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));  
+  row-gap: 3.5rem;
 }
