@@ -18,33 +18,24 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
       element: <App />,
       children: [
         {
-          path: "/",
-          element: <Home />,
+          path: "/",  element: <Home />,
         },
         {
-          path: "/products",
-          element: <Products />,
+          path: "/products",  element: <Products />,
         },
         {
-          path: "/new-features",
-          element: <NewFeatures />,
+          path: "/new-features",  element: <NewFeatures />,
         },
         {
-          path: "/featured",
-          element: <Featured />,
+          path: "/featured",  element: <Featured />,
         },
         {
-          path: "/about",
-          element: <About />,
+          path: "/about",  element: <About />,
         },
         {
-          path: "/contact",
-          element: <Contact />,
+          path: "/contact",  element: <Contact />,
         },
-
-
       ]
-      
     }
 
   ])

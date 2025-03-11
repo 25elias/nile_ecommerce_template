@@ -4,7 +4,11 @@ import FilterBy from './FilterBy';
 import SideBar from '../SideBar';
 
 
+
 const ProductPage = () => {
+    const [selectedCategory, setSelectedCategory] = useState(null);
+
+
     let products = [
         {id: 0, name: 'Backbag', price: '$20', image: '../assets/new1.png', category: 'Men'},
         {id: 1, name: 'Headphone', price: '$30', image: '../assets/new2.png', category: 'Women'},
@@ -14,14 +18,16 @@ const ProductPage = () => {
     
       ]
       
-      const [selectedCategory, setSelectedCategory] = useState(null);
+
       
       useEffect(() => {
 
-          if(selectedCategory) {
-            products += `&category=${selectedCategory}`;
-          }
-        },[products, selectedCategory])
+
+
+          // if(selectedCategory) {
+          //   products += `&category=${selectedCategory}`;
+          // }
+        },[])
 
 
     const handleCategoryChange = (category) => {
@@ -38,8 +44,14 @@ const ProductPage = () => {
         <div className='hidden sm:flex flex-col'>
           <SideBar />
         </div>
-        {/* U need to populate the products here not in productcard silly!! */}
-        <ProductCard products={products} />
+        {/* U need to populate the products here not in productcard, silly!! */}
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+          {
+            products.map((product) => 
+              <ProductCard  key={product}  product={product}/>
+            )
+          }
+        </div>
       </div>
     </div>
   )

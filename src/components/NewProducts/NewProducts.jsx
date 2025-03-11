@@ -15,7 +15,7 @@ const NewProducts = () => {
       </div>
 
       {/* new product list */}
-      <div className="grid place-content-center">
+      <div className="grid">
         <NewProduct />
         <NewProduct />
         <NewProduct />

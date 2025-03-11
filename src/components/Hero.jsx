@@ -14,7 +14,7 @@ const Hero = () => {
                     Go shopping <FaArrowRightLong className='w-4 h-4' />
                 </button>
             </div>
-            <div className='w-full max-h-[400px] sm:min-h-[500px] py-8'>
+            <div className='w-full max-h-[400px] sm:min-h-[500px] pl-4 py-8'>
                 <img src="../assets/home.png" alt=""
                  className='max-h-[400px] sm:min-h-[500px]'  />
             </div>

@@ -1,0 +1,68 @@
+[debug] [2025-03-03T13:53:58.975Z] ----------------------------------------------------------------------
+[debug] [2025-03-03T13:53:58.980Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hi-tech\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-03-03T13:53:58.981Z] CLI Version:   13.32.0
+[debug] [2025-03-03T13:53:58.981Z] Platform:      win32
+[debug] [2025-03-03T13:53:58.981Z] Node Version:  v22.14.0
+[debug] [2025-03-03T13:53:58.982Z] Time:          Mon Mar 03 2025 16:53:58 GMT+0300 (East Africa Time)
+[debug] [2025-03-03T13:53:58.982Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-03T13:53:59.001Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-03T13:53:59.002Z] > authorizing via signed-in user (eliasusman83@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\hi-tech\Desktop\FullStackWebDevelopement\Front-End Web Dev\FRAMEWORKS\REACT.JS\Ecommerce\nile
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-03-03T13:54:25.279Z] Checked if tokens are valid: false, expires at: 1740988321371
+[debug] [2025-03-03T13:54:25.280Z] Checked if tokens are valid: false, expires at: 1740988321371
+[debug] [2025-03-03T13:54:25.280Z] > refreshing access token with scopes: []
+[debug] [2025-03-03T13:54:25.286Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-03T13:54:25.286Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-03T13:54:25.389Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------358991452763928313486782","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo ENOTFOUND www.googleapis.com
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-03-03T13:54:25.390Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-03-03T13:54:25.476Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\hi-tech\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:147:12)
+    at refreshTokens (C:\Users\hi-tech\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:539:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getAccessToken (C:\Users\hi-tech\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:42:18)
+    at async Client.addAuthHeader (C:\Users\hi-tech\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:169:21)
+    at async Client.request (C:\Users\hi-tech\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:120:34)
+    at async getProjectPage (C:\Users\hi-tech\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:265:17)
+    at async getFirebaseProjectPage (C:\Users\hi-tech\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:282:23)
+    at async selectProjectInteractively (C:\Users\hi-tech\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:122:41)
+    at async doSetup (C:\Users\hi-tech\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:89:27)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2025-03-03T13:58:30.169Z] ----------------------------------------------------------------------
+[debug] [2025-03-03T13:58:32.671Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hi-tech\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login --reauth
+[debug] [2025-03-03T13:58:32.672Z] CLI Version:   13.32.0
+[debug] [2025-03-03T13:58:32.672Z] Platform:      win32
+[debug] [2025-03-03T13:58:32.672Z] Node Version:  v22.14.0
+[debug] [2025-03-03T13:58:32.673Z] Time:          Mon Mar 03 2025 16:58:32 GMT+0300 (East Africa Time)
+[debug] [2025-03-03T13:58:32.673Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=35377718&redirect_uri=http%3A%2F%2Flocalhost%3A9005&login_hint=eliasusman83%40gmail.com
+[info] 
+[info] Waiting for authentication...
