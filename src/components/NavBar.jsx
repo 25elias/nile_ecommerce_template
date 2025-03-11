@@ -38,7 +38,7 @@ const NavBar = () => {
         >
         <a href="/" 
         className="text-2xl font-semibold text-gray-900 pl-4 hover:text-blue-500 p-2"
-        >Shoppinger</a>
+        >nile.</a>
 
         {/* navigations */}
         <ul className="hidden md:flex items-center justify-between gap-4  text-center ">
