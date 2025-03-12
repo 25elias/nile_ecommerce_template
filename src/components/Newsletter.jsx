@@ -8,7 +8,7 @@ const Newsletter = () => {
       <div className="text-center space-y-4 mb-4">
         <h2 className='text-3xl text-gray-900 font-bold tracking-widest uppercase pt-4 pb-4'>New Arival</h2>
         <p className='text-xs text-gray-600 font-semibold pb-4 tracking-wider'>
-        Promotion new products and sales. Directly to you.</p>
+        Promotion new products and sales, Directly to you.</p>
       </div>
       <div className="text-center max-w-xl mx-auto mb-8">
         <form className="flex items-center gap-4">
